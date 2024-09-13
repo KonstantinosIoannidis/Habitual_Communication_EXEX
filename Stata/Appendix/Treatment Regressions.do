@@ -9,7 +9,7 @@ eststo as01: quietly ///
 ologit action state state_new round risk crt trust_sender trust_receiver age study gender if late == 0 & treatment_future == 1, cluster(sessioncode)
 eststo as11: quietly ///
 ologit action state state_new round risk crt trust_sender trust_receiver age study gender if late == 1 & treatment_future == 1, cluster(sessioncode)
-esttab as00 as10 as01 as11 using "../Tex/treatment_effects.tex", ///
+esttab as00 as10 as01 as11, ///
 mlabels("Rare Early" "Rare Late" "Frequent Early" "Frequent Late") ///
 indicate(Controls = age gender study) se pr2 label nonumber nonotes noomitted nobaselevels interaction(*) b(2) obslast replace type ///
 addnotes("Controls: Age, Gender, Study, Risk, CRT, Trust." ///
