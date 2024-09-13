@@ -25,7 +25,6 @@ gr_edit .style.editstyle boxstyle(shadestyle(color(white))) editcopy
 gr_edit .plotregion1.graph1.style.editstyle boxstyle(linestyle(color(white))) editcopy
 gr_edit .plotregion1.graph2.style.editstyle boxstyle(linestyle(color(white))) editcopy
 gr_edit style.editstyle boxstyle(linestyle(color(white))) editcopy
-graph export "../Graphs/treatments.png", replace
 
 graph drop rare_full frequent_full
 
