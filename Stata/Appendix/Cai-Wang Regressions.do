@@ -24,7 +24,7 @@ eststo as011: quietly ///
 reg action_state state risk crt trust_sender trust_receiver age study gender if late == 0 & treatment_past == 1 & treatment_future == 1, cluster(participantcode)
 eststo as111: quietly ///
 reg action_state state risk crt trust_sender trust_receiver age study gender if late == 1 & treatment_past == 1 & treatment_future == 1, cluster(participantcode)
-esttab as000 as100 as010 as110 as001 as101 as011 as111 using "../Tex/cai_wang.tex", ///
+esttab as000 as100 as010 as110 as001 as101 as011 as111, ///
 mlabels("CR Early" "CR Late" "AR Early" "AR Late" "CF Early" "CF Late" "AF Early" "AF Late" ) ///
 indicate(Controls = age gender study) se r2 label nonumber nonotes noomitted nobaselevels interaction(*) b(2) obslast replace type ///
 addnotes("Controls: Age Gender Study " ///
