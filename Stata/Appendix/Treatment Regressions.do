@@ -58,5 +58,4 @@ gr_edit .plotregion1.graph2.style.editstyle boxstyle(linestyle(color(white))) ed
 gr_edit style.editstyle boxstyle(linestyle(color(white))) editcopy
 gr_edit .note.text = {}
 gr_edit .note.text.Arrpush In the upper figure for Aligned-Rare and Conflict-Rare, black dots indicate the rounds when b=1.
-graph export "../Graphs/corr_all_rounds.png", replace
 drop corr*
