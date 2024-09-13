@@ -27,7 +27,7 @@ eststo feedback_matching: quietly ///
 regress mean_round_time_results i.treatment_past round if id_ses == 1 & round<=30, vce(cluster sessioncode)
 eststo feedback_individual: quietly ///
 regress time_results i.treatment_past round risk crt trust_sender trust_receiver age gender study if round<=30, vce(cluster id_sub)
-esttab decision_matching decision_individual feedback_matching feedback_individual using "../Tex/times_part_one.tex", ///
+esttab decision_matching decision_individual feedback_matching feedback_individual, ///
 mlabels(decision_matching decision_individual feedback_matching feedback_individual) ///
 indicate(Controls = age gender study) se r2 label nonumber nonotes noomitted nobaselevels interaction(*) b(2) obslast replace type ///
 addnotes("Controls: Age, Gender, Study, Risk, CRT, Trust." ///
