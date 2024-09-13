@@ -44,7 +44,6 @@ gr_edit .plotregion1.graph2.style.editstyle boxstyle(linestyle(color(white))) ed
 gr_edit style.editstyle boxstyle(linestyle(color(white))) editcopy
 gr_edit .note.text = {}
 gr_edit .note.text.Arrpush Lines in each bar indicate 95% confidence intervals. Horizontal lines indicate perfect Bayesian equilibrium correlation (0.650). 
-graph export "../Graphs/treatment_effects.png", replace
 graph drop rare frequent 
 restore
 
