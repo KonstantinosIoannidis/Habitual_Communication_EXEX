@@ -51,7 +51,7 @@ twoway 	///
 gr_edit .style.editstyle boxstyle(shadestyle(color(white))) editcopy
 gr_edit style.editstyle boxstyle(linestyle(color(white))) editcopy
 
-graph combine rare_time frequent_time, rows(2)
+graph combine rare_time frequent_time, rows(2) name(Figure_A1)
 gr_edit .style.editstyle boxstyle(shadestyle(color(white))) editcopy
 gr_edit .plotregion1.graph1.style.editstyle boxstyle(linestyle(color(white))) editcopy
 gr_edit .plotregion1.graph2.style.editstyle boxstyle(linestyle(color(white))) editcopy
