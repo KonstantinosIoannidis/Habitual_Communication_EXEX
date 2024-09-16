@@ -59,3 +59,4 @@ gr_edit style.editstyle boxstyle(linestyle(color(white))) editcopy
 gr_edit .note.text = {}
 gr_edit .note.text.Arrpush In the upper figure for Aligned-Rare and Conflict-Rare, black dots indicate the rounds when b=1.
 drop corr*
+graph drop rare_time frequent_time 
