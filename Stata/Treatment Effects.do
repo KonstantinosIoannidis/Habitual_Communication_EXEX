@@ -37,7 +37,7 @@ twoway (bar meancorr round_past if treatment_past==0, color(maroon)) ///
 	   ytitle("Correlation between state and action") ///	
 	   title("Frequent") ysize(2) xsize(2) name(frequent)
 
-graph combine rare frequent
+graph combine rare frequent, name(Figure_3)
 gr_edit .style.editstyle boxstyle(shadestyle(color(white))) editcopy
 gr_edit .plotregion1.graph1.style.editstyle boxstyle(linestyle(color(white))) editcopy
 gr_edit .plotregion1.graph2.style.editstyle boxstyle(linestyle(color(white))) editcopy
