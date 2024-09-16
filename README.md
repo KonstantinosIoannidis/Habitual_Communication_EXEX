@@ -1,6 +1,6 @@
 ## Description
 
-This repository includes the data and the Stata code used in Ioannidis K. (2025). [Habitual communication](https://www.sciencedirect.com/science/article/pii/S2214804323000861). *Experimental Economics*, 106(1): 1-7
+This repository includes the data and the Stata code used in Ioannidis K. (2025). [Habitual communication](https://www.sciencedirect.com/science/article/pii/S2214804323000861). *Experimental Economics*
 
 ### Abstract
 
