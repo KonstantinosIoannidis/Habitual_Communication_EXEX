@@ -20,7 +20,7 @@ twoway (scatter bias round if treatment_past == 0 & treatment_future == 1 & bias
 */ legend(order(1 "Conflict-Frequent" 2 "Aligned-Frequent" 3 "Both (Conflict-Frequent, Aligned-Frequent)") rows(1) position(6) size(medium)) name(frequent_full)
 gr_edit .style.editstyle boxstyle(shadestyle(color(white))) editcopy
 * Combine subfigures *
-graph combine rare_full frequent_full, rows(2)
+graph combine rare_full frequent_full, rows(2) name(Figure_1)
 gr_edit .style.editstyle boxstyle(shadestyle(color(white))) editcopy
 gr_edit .plotregion1.graph1.style.editstyle boxstyle(linestyle(color(white))) editcopy
 gr_edit .plotregion1.graph2.style.editstyle boxstyle(linestyle(color(white))) editcopy
