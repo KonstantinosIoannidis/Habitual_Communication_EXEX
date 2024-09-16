@@ -20,5 +20,4 @@ do "../Stata/Appendix/Treatment Regressions.do"
 do "../Stata/Appendix/Cai-Wang Regressions.do"
 * Classification habitual with threshold 80 (appendix A.5)
 run "../Stata/Classification/Habits_classify80.do"
-do "../Stata/Individual Behaviour Alternative.do"
-
+do "../Stata/Appendix/Individual Behaviour Alternative.do"
